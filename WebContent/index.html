@@ -1,0 +1,245 @@
+<!doctype>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Practice</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/practice.css">
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+		<div class="container">
+			<p class="navbar-text" id="navigationText">Navigation Bar</p>
+			<button class="btn navbar-btn btn-success">
+				Cool
+				<span class="glyphicon glyphicon-home"></span>
+			</button>
+			<button class="btn navbar-btn btn-warning">
+				About Us
+				<span class="glyphicon glyphicon-user"></span>
+			</button>
+			<button class="btn navbar-btn btn-danger">
+				Contact Us
+				<span class="glyphicon glyphicon-search"></span>
+			</button>
+		</div>
+	</nav>
+
+
+	<div class="container" id="bodyContainer">
+		<h1 id="cool">Hello World</h1>
+
+
+		<hr>
+		<br>
+		<div class="grandparent">
+			<div class="parent">
+				<div class="child">
+					<span class="subchild"></span>
+				</div>
+			</div>
+			<div class="surrogateParent1"></div>
+			<div class="surrogateParent2"></div>
+
+			<ul>
+				<li><a href="http://localhost:8080/WebCounter/Test.jsp">Index</a></li>
+				<li><a href="http://localhost:8080/WebCounter/FileCounter">FileCounter</a></li>
+				<li><a href="">Link 3</a></li>
+				<li id="a"></li>
+				<li id="b"></li>
+				<li id="c"></li>
+				<li id="foo1">foo</li>
+				<li id="bar1">bar</li>
+				<li id="baz1">baz</li>
+				<div class="test"></div>
+			</ul>
+
+
+			<hr>
+			<br>
+			<button class="btn btn-info" id="buttonColor">Change my Color</button>
+
+			<hr>
+			<br>
+			<button class="btn btn-primary" id="buttonColor2">Change all button colors</button>
+
+			<hr>
+			<br>
+			<div class="row">
+  				<div id="waterfall" class="col-xs-6 col-md-3">
+    				<a href="#" class="thumbnail">
+      					<img src="images/waterfall.jpg">
+    				</a>
+  				</div>
+			</div>
+
+			<hr>
+			<br>
+			<button class="btn btn-warning" id="showButton">Show</button>
+			<h1 id="showText">Hi</h1>
+			<hr>
+			<br>
+
+			<button class="btn btn-success" id="enableForm">Enable</button>
+			<br>
+			<br>
+
+			<div class="input-group">
+  				<span class="input-group-addon">UserName</span>
+  				<input type="text" class="form-control" placeholder="Username" id="formDisable">
+  				<span class="input-group-addon">Password</span>
+  				<input type="text" class="form-control" placeholder="Password" id="formDisable">
+			</div>
+
+			<hr>
+			<br>
+
+			<button class="btn btn-info" id="linkItemReplaceButton">Replace</button>
+			<br>
+			<br>
+			<div class="panel panel-danger">
+				<div class="panel-heading">Panel heading</div>
+				<div class="panel-body">
+					<ul class="list-group">
+						<li class="list-group-item">Apple</li>
+						<li class="list-group-item">Banana</li>
+						<li class="list-group-item">Orange</li>
+					</ul>
+				</div>
+			</div>
+
+			<hr>
+			<br>
+
+			<button class="btn btn-primary" id="showCheckBoxButton">Toggle Checkbox</button>
+			<br>
+			<br>
+
+			<div class="input-group" id="checkBox" style="display:none;">
+				<span class="input-group-addon">
+					<input type="checkbox">
+				</span>
+				<input type="text" class="form-control"></input>
+			</div>
+
+			<br>
+			<br>
+			<hr>
+
+			<button class="btn btn-warning" id="buttonOn">Using on()</button>
+
+			<hr>
+			<br>
+
+			<h3 id="h3Element">Selecting Elements with DOM</h3>
+			<div class="panel panel-primary" id="panelElement">
+				<div class="panel-heading">Vegetables</div>
+				<ul class="list-group">
+					<li class="list-group-item">Celery</li>
+					<li class="list-group-item">Carrot</li>
+					<li class="list-group-item">Spinach</li>
+					<li class="list-group-item">Lettuce</li>
+				</ul>
+				<div class="panel-body">
+					<button class="btn btn-success" id="panelButton">
+						Change
+						<span class="glyphicon glyphicon-pencil"></span>
+					</button>
+				</div>
+			</div>
+
+			<hr>
+			<br>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					Getting and Setting Input Forms
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="input-group">
+								<span class="input-group-btn">
+									<button class="btn btn-success" id="buttonInput">Go!</button>
+								</span>
+								<input class="form-control" id="inputFirstName"></input>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="input-group">
+								<input class="form-control" id="inputLastName"></input>
+								<span class="input-group-btn">
+									<button class="btn btn-default">Go!</button>
+								</span>
+							</div>
+						</div>
+					</div>
+					<h3 id="textFirstLastName">Type in Your First Name.  We will automatically generate a last name for you.</h3>
+				</div>
+			</div>
+
+			<hr>
+			<br>
+
+			<h3>Changing GlyphIcon by Compound CSS Selector</h3>
+			<div class="container">
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button class="btn btn-warning btn-large" id="glyphiconButton">
+						Submit
+					</button>
+					<span class="glyphicon glyphicon-search" id="glyphiconSpan"></span>
+				</form>
+			</div>
+
+			<hr>
+			<br>
+			<h3>Changing Compound Class Again</h3>
+			<div class="panel panel-default" id="panelContainer">
+				<div class="panel-heading">Panel Heading</div>
+				<div class="panel-body">
+					<button class="btn btn-danger" id="changePanelColorButton">Change Panel Color</button>
+				</div>
+			</div>
+
+			<hr>
+			<br>
+			<h3>Using .on() with focus</h3>
+			<div class="row">
+				<div class="col-md-3">
+					<a href="#" class="thumbnail">
+						<img src="images/flower.jpg" id="imageFocus">
+					</a>
+				</div>
+			</div>
+
+			<hr>
+			<br>
+			<h3>ListGroup with focus</h3>
+			<div class="panel panel-default">
+				<div class="panel-heading">Float over one of the items</div>
+				<ul class="list-group">
+					<li class="list-group-item" id="lgi1">Red</li>
+					<li class="list-group-item" id="lgi2">Blue</li>
+					<li class="list-group-item" id="lgi3">Yellow</li>
+					<li class="list-group-item" id="lgi4">Purple</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
+	<script src="scripts/practice.js"></script>
+</body>
+</html>
